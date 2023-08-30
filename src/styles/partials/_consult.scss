@@ -1,0 +1,53 @@
+.consult {
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+    max-height: 66px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    svg {
+        width: 40px;
+        height: 40px;
+        margin: 12px;
+    }
+
+    &__info {
+        display: flex;
+        height: 66px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 12px 0;
+        width: 90%;
+
+        &-name {
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        &-date {
+            font-size: 14px;
+            font-weight: normal;
+            color: $gray;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-confirm {
+            color: $red;
+            padding-right: 15px;
+        }
+    }
+
+    &:hover {
+        border: 1px solid $blue;
+
+        svg rect {
+            fill: $blue;
+        }
+
+        svg path {
+            fill: $white;
+        }
+    }
+}

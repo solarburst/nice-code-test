@@ -1,0 +1,24 @@
+.note {
+    display: flex;
+    margin-bottom: 20px;
+
+    &__info {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: normal;
+
+        &-date {
+            color: $gray;
+        }
+
+        &-photo {
+            margin-top: 15px;
+            border: 4px solid $light-gray;
+            border-radius: 5px;
+        }
+    }
+
+    .button-panel {
+        margin: 0;
+    }
+}

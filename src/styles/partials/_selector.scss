@@ -1,0 +1,41 @@
+.list__selector {
+    display: flex;
+    max-width: 366px;
+    justify-content: space-between;
+    padding: 16px;
+
+    &__count {
+        margin: 0;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.2;
+        color: $white;
+        background-color: $gray;
+        border-radius: 10px;
+        padding: 2px 4px;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 16px;
+
+        &--toggled {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            input[type="checkbox"] {
+                width: 18px;
+                height: 18px;
+            }
+
+            p {
+                color: $gray;
+            }
+
+            .list__selector__count {
+                background-color: $blue;
+            }
+        }
+    }
+}

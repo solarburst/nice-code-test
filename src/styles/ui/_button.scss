@@ -1,0 +1,119 @@
+.button {
+    padding: 0;
+    border: none;
+    color: inherit;
+    background-color: transparent;
+
+    &-input {
+        max-height: 60px;
+        padding: 13px;
+
+        svg {
+            width: 34px;
+            height: 34px;
+        }
+
+        svg:hover {
+            cursor: pointer;
+            
+            path {
+                fill: $white;
+                transition: fill .2s linear;
+            }
+
+            rect {
+                fill: $blue;
+                transition: fill .2s linear;
+            }
+
+            circle {
+                fill: $blue;
+                transition: fill .2s linear;
+            }
+        }
+    }
+
+    &-selector {
+        color: $gray;
+        font-weight: normal;
+        font-size: 14px;
+        cursor: pointer;
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    &-panel {
+        max-width: 34px;
+        max-height: 34px;
+        margin: 15px;
+        cursor: pointer;
+        position: relative;
+
+        svg {
+            width: 34px;
+            height: 34px;
+        }
+
+        &--active {
+            svg {
+                path {
+                    fill: $white;
+                    transition: fill .2s linear;
+                }
+
+                circle {
+                    fill: $blue;
+                    transition: fill .2s linear;
+                }
+            }
+        }
+    }
+
+    &-popup {
+        text-align: left;
+        padding: 10px 20px;
+        width: 100%;
+
+        &:hover {
+            background-color: $bg-color;
+        }
+    }
+
+    &-tabs {
+        color: $gray;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            color: $blue;
+
+            svg path {
+                fill: $white;
+            }
+
+            svg rect {
+                fill: $blue;
+                stroke: $blue;
+            }
+        }
+
+        svg {
+            width: 26px;
+            height: 26px;
+            margin-left: 10px;
+        }
+
+        &-action {
+            cursor: pointer;
+            color: $gray;
+            font-size: 14px;
+
+            &--active {
+                color: $blue;
+            }
+        }
+    }
+}
